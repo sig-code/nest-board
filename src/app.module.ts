@@ -12,8 +12,12 @@ import { AppService } from './app.service';
       username: 'user',
       password: 'password',
       database: 'develop',
-      entities: [],
       synchronize: true,
+      entities: ['src/entities/*.entity.{ts,js}'],
+      migrations: ['src/migration/*.ts'],
+      cli: {
+        migrationsDir: 'src/migration/',
+      },
     }),
   ],
   controllers: [AppController],
