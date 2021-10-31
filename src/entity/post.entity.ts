@@ -5,10 +5,10 @@ export class Post {
   @PrimaryGeneratedColumn({ type: 'int' })
   id: number;
 
-  @Column({ type: 'string', nullable: false })
+  @Column({ nullable: false })
   title: string;
 
-  @Column({ type: 'text', nullable: false })
+  @Column({ nullable: false })
   description: string;
 
   @Column({ type: 'datetime' })
